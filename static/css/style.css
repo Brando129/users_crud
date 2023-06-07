@@ -1,0 +1,18 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Add New User Title and Home Link */
+.banner {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 110px;
+}
+
+/* Create User Button */
+.btn {
+    margin-top: 10px;
+}
