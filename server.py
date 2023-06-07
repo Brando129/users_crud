@@ -21,6 +21,17 @@ def create():
     User.save(request.form)
     return redirect('/users')
 
+@app.route('/user/edit/<int:id>')
+def edit(id):
+    data = {
+        "id":id
+    }
+    return render_template("edit_user.html", user=User.get_one(data))
+
+@app.route('/user/update', methods=['POST'])
+def update():
+    User.update(request.form)
+    return redirect('/users')
 
 if __name__=='__main__':
     app.run(debug=True, host='localhost', port=5001)
