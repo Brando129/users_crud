@@ -12,10 +12,12 @@
     <title>Users</title>
 </head>
 <body>
+    <!-- Container -->
     <div class="read_all_container">
-        <!-- All Users Table -->
         <h1 class="text-left ms-4">All Users</h1>
+        <!-- All Users Table -->
         <table class="table table-hover">
+            <!-- Table Head -->
             <thead>
                 <tr>
                     <th>ID</th>
@@ -26,8 +28,11 @@
                     <th>Actions</th>
                 </tr>
             </thead>
+            <!-- End of Table Head -->
+            <!-- Table Body -->
             <tbody>
                 {% for user in users %}
+                <!-- Table Row -->
                     <tr>
                         <td>{{user.id}}</td>
                         <td>{{user.first_name}}</td>
@@ -40,11 +45,16 @@
                             <a href="/user/destroy/{{user.id}}">Delete</a>
                         </td>
                     </tr>
+                    <!-- End of Table Row -->
                 {% endfor %}
             </tbody>
+            <!-- End of Table Body -->
         </table>
         <!-- End of All Users Table -->
+        <!-- Add New User Button -->
         <a href="/user/new" class="btn btn-primary ms-4">Add a New User</a>
+        <!-- End of Add New User Button -->
     </div>
+    <!-- End of Container -->
 </body>
 </html>

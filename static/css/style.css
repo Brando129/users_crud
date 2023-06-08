@@ -4,45 +4,8 @@
     padding: 0;
 }
 
-.table,
-.table_head,
-.table_row
-.table_header {
-    border: 2px solid black;
-}
-
-.read_all_container {
-    padding: 20px;
-}
-
-/* Add New User Title and Home Link */
-.edit_user_banner {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.header {
-    margin-left: 20px;
-}
-
-.card_text {
-    margin-left: 10px;
-}
-
-/* Create User Button */
-.btn {
-    margin-top: 10px;
-    border: 2px solid black;
-    box-shadow: 3px 3px black;
-}
-
-.user_card {
-    margin: 10px 0px;
-    padding: 5px;
-    border: 2px solid black;
-}
-
+/* Create User Template */
+/* Create User Banner */
 .banner {
     display: flex;
     align-items: center;
@@ -51,18 +14,68 @@
     margin-left: 110px;
 }
 
-.show_user_header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+/* Create User Button */
+.btn {
+    margin-top: 10px;
+    border: 2px solid black;
+    box-shadow: 3px 3px black;
 }
+/* End of Create User Template */
+
+/* Edit User Template */
+/* Add New User Title and Home Link */
+.edit_user_banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Edit User Bottom Anchor Tags */
 .edit_bottom_tags {
     margin-top: 10px;
     display: flex;
     align-items: baseline;
     justify-content: flex-start;
 }
+/* End of User Template */
 
+/* Read All Template */
+/* Read All Users Container */
+.read_all_container {
+    padding: 20px;
+}
+
+/* Read ALL Users Table */
+.table,
+.table_head,
+.table_row
+.table_header {
+    border: 2px solid black;
+}
+/* End of Read All Template */
+
+/* Show User Template */
+/* Show User Header */
+.show_user_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Show User Card */
+.user_card {
+    margin: 10px 0px;
+    padding: 5px;
+    border: 2px solid black;
+}
+
+/* Show User Text */
+.card_text {
+    margin-left: 10px;
+}
+
+/* Show User Tag */
 .show_user_tag {
     margin-left: 30px;
 }
+/* End of Show User Template */

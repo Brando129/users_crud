@@ -14,11 +14,15 @@
 <body>
     <!-- Container -->
     <div class="container col-8">
+        <!-- Form -->
         <form action="/user/update" method="post" class="col-6 mx-auto">
+            <!-- Edit Form Banner -->
             <div class="edit_user_banner">
                 <h1>Edit {{user.first_name}}</h1>
                 <a href="/users" class="home">Home</a>
             </div>
+            <!-- End of Edit Form Banner -->
+            <!-- Form Inputs -->
             <input type="hidden" name="id" value="{{user.id}}">
             <div class="form-group">
                 <label for="first_name">Frist Name:</label>
@@ -32,11 +36,15 @@
                 <label for="email">Email:</label>
                 <input type="text" name="email" class="form-control" value="{{user.email}}">
             </div>
+            <!-- End of Form Inputs -->
+            <!-- Form Button and Anchor tag -->
             <div class="edit_bottom_tags">
                 <input type="submit" value="Update User" class="btn btn-success">
                 <a class="show_user_tag" href="/user/show/{{user.id}}">Show User</a>
             </div>
+            <!-- End of Form Button and Anchor tag -->
         </form>
+        <!-- End of Form -->
     </div>
     <!-- End of Container -->
 </body>

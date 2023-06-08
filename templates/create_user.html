@@ -14,25 +14,37 @@
 <body>
     <!-- Container -->
     <div class="container col-8">
+        <!-- Create User Banner -->
         <div class="banner">
             <h1>Add a New User</h1>
             <a href="/users" class="home">Home</a>
         </div>
+        <!-- End of Create User Banner -->
+        <!-- Form -->
         <form action="/user/create" method="post" class="col-6 mx-auto">
+            <!-- First Name -->
             <div class="form-group">
                 <label for="first_name">Frist Name:</label>
                 <input type="text" name="first_name" class="form-control">
             </div>
+            <!-- End of First Name -->
+            <!-- Last Name -->
             <div class="form-group">
                 <label for="last_name">Last Name:</label>
                 <input type="text" name="last_name" class="form-control">
             </div>
+            <!-- End of Last Name -->
+            <!-- Email -->
             <div class="form-group">
                 <label for="email">Email:</label>
                 <input type="text" name="email" class="form-control">
             </div>
+            <!-- End of Email -->
+            <!-- Create User Button -->
             <input type="submit" value="Create User" class="btn btn-success">
+            <!-- End of Create User Button -->
         </form>
+        <!-- End of Form -->
     </div>
     <!-- End of Container -->
 </body>
