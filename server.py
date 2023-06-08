@@ -28,6 +28,13 @@ def edit(id):
     }
     return render_template("edit_user.html", user=User.get_one(data))
 
+@app.route('/user/show/<int:id>')
+def show(id):
+    data = {
+        "id":id
+    }
+    return render_template("show_user.html", user=User.get_one(data))
+
 @app.route('/user/update', methods=['POST'])
 def update():
     User.update(request.form)
