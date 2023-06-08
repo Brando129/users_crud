@@ -13,9 +13,9 @@
 </head>
 <body>
     <!-- Container -->
-    <div class="container">
+    <div class="container col-8">
         <form action="/user/update" method="post" class="col-6 mx-auto">
-            <div class="banner">
+            <div class="edit_user_banner">
                 <h1>Edit {{user.first_name}}</h1>
                 <a href="/users" class="home">Home</a>
             </div>
@@ -32,8 +32,10 @@
                 <label for="email">Email:</label>
                 <input type="text" name="email" class="form-control" value="{{user.email}}">
             </div>
-            <input type="submit" value="Update User" class="btn btn-success">
-            <a href="/user/show/{{user.id}}">Show User</a>
+            <div class="edit_bottom_tags">
+                <input type="submit" value="Update User" class="btn btn-success">
+                <a class="show_user_tag" href="/user/show/{{user.id}}">Show User</a>
+            </div>
         </form>
     </div>
     <!-- End of Container -->
