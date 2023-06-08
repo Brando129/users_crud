@@ -7,10 +7,12 @@
 /* Add New User Title and Home Link */
 .banner {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     margin-left: 110px;
 }
+
+
 
 /* Create User Button */
 .btn {
