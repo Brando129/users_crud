@@ -4,6 +4,13 @@
     padding: 0;
 }
 
+.table,
+.table_head,
+.table_row
+.table_header {
+    border: 2px solid black;
+}
+
 .read_all_container {
     padding: 20px;
 }
@@ -11,7 +18,7 @@
 /* Add New User Title and Home Link */
 .banner {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     margin-left: 110px;
 }
@@ -20,6 +27,9 @@
     margin-left: 20px;
 }
 
+.card_text {
+    margin-left: 10px;
+}
 
 /* Create User Button */
 .btn {
@@ -29,5 +39,7 @@
 }
 
 .user_card {
+    margin: 20px 0px;
+    padding: 5px;
     border: 2px solid black;
 }

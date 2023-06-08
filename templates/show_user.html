@@ -18,10 +18,10 @@
             <a href="/users" class="home">Home</a>
         </div>
         <div class="user_card">
-            <p>Full Name: {{user.full_name()}}</p>
-            <p>Email: {{user.email}}</p>
-            <p>Created On: {{user.created_at}}</p>
-            <p>Last Updated: {{user.updated_at.strftime("%b %d %y")}}</p>
+            <p class="card_text">Full Name: {{user.full_name()}}</p>
+            <p class="card_text">Email: {{user.email}}</p>
+            <p class="card_text">Created On: {{user.created_at}}</p>
+            <p class="card_text">Last Updated: {{user.updated_at.strftime("%b %d %y")}}</p>
         </div>
         <div>
             <a href="/user/edit/{{user.id}}">Edit</a> |
