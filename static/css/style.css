@@ -18,3 +18,7 @@
 .btn {
     margin-top: 10px;
 }
+
+.user_card {
+    border: 2px solid black;
+}

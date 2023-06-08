@@ -12,10 +12,21 @@
     <title>Show User</title>
 </head>
 <body>
-    <h2 class="text-center">User {{user.id}}</h2>
-    <p>Full Name: {{user.full_name()}}</p>
-    <p>Email: {{user.email}}</p>
-    <p>Created On: {{user.created_at}}</p>
-    <p>Last Updated: {{user.updated_at.strftime("%b %d %y")}}</p>
+    <div class="container col-4">
+        <div>
+            <h2 class="text-center">User {{user.id}}</h2>
+            <a href="/users" class="home">Home</a>
+        </div>
+        <div class="user_card">
+            <p>Full Name: {{user.full_name()}}</p>
+            <p>Email: {{user.email}}</p>
+            <p>Created On: {{user.created_at}}</p>
+            <p>Last Updated: {{user.updated_at.strftime("%b %d %y")}}</p>
+        </div>
+        <div>
+            <a href="/user/edit/{{user.id}}">Edit</a> |
+            <a href="/user/destroy/{{user.id}}">Delete</a>
+        </div>
+    </div>
 </body>
 </html>
