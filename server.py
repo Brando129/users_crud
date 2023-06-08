@@ -33,7 +33,7 @@ def update():
     User.update(request.form)
     return redirect('/users')
 
-@app.route('/user/destroy/<int: id>')
+@app.route('/user/destroy/<int:id>')
 def destroy(id):
     data = {
         'id': id
