@@ -35,9 +35,15 @@ class User:
     def update(cls, data):
         query = "UPDATE users SET first_name=%(first_name)s,last_name=%(last_name)s,email=%(email)s,updated_at=NOW() WHERE id = %(id)s;"
         return connectToMySQL('users2_schema').query_db(query, data)
+    
+    @classmethod
+    def destroy(cls, data):
+        query = "DELETE FROM users WHERE id == %(id)s;"
+        return connectToMySQL('users2_schema').query_db(query, data)
 
 
 # ***** TO DO *******
 #Fix Header on Create new user page(Done)
 #Fix issue with not showing the created at(Done)
 #Add documentation(Done)
+#Add Delete functionality

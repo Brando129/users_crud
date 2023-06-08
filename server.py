@@ -33,5 +33,13 @@ def update():
     User.update(request.form)
     return redirect('/users')
 
+@app.route('/user/destroy/<int: id>')
+def destroy(id):
+    data = {
+        'id': id
+    }
+    User.destroy(data)
+    return redirect('/users')
+
 if __name__=='__main__':
     app.run(debug=True, host='localhost', port=5001)
