@@ -4,6 +4,10 @@
     padding: 0;
 }
 
+.read_all_container {
+    padding: 20px;
+}
+
 /* Add New User Title and Home Link */
 .banner {
     display: flex;
@@ -12,11 +16,16 @@
     margin-left: 110px;
 }
 
+.header {
+    margin-left: 20px;
+}
 
 
 /* Create User Button */
 .btn {
     margin-top: 10px;
+    border: 2px solid black;
+    box-shadow: 3px 3px black;
 }
 
 .user_card {
