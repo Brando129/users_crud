@@ -43,10 +43,3 @@ class User:
     def destroy(cls, data):
         query = "DELETE FROM users WHERE id = %(id)s;"
         return connectToMySQL('users2_schema').query_db(query, data)
-
-
-# ***** TO DO *******
-#Fix Header on Create new user page(Done)
-#Fix issue with not showing the created at(Done)
-#Add documentation(Done)
-#Add Delete functionality(Done)
