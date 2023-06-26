@@ -1,6 +1,6 @@
 from flask_app.config.mysqlconnection import connectToMySQL
 from flask import flash
-import re # regex model
+import re # regex module
 # Create a regular expression object that we'll use later
 EMAIL_REGEX = re.compile(r'^[a-zA-Z0-9.+_-]+@[a-zA-Z0-9._-]+\.[a-zA-Z]+$')
 
@@ -29,6 +29,9 @@ class User:
             is_valid = False
         if len(user_info['email']) <= 0:
             flash("Email is required.")
+            is_valid = False
+        if not EMAIL_REGEX.match(user_info['email']):
+            flash("Invalid email address.")
             is_valid = False
         return is_valid
 
