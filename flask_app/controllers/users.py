@@ -16,9 +16,14 @@ def new():
 
 @app.route('/user/create', methods=['POST'])
 def create():
-    print(request.form)
-    User.save(request.form)
-    return redirect('/users')
+
+    # Check if the form info is valid input
+    if User.is_valid_user(request.form):
+        User.save(request.form)
+        return redirect('/')
+    # if not -- send direct the user back to the create page
+    else:
+        return redirect('/user/new')
 
 @app.route('/user/edit/<int:id>')
 def edit(id):
